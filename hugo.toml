@@ -1,0 +1,43 @@
+baseURL = 'https://ai-independence.com/'
+languageCode = 'en-us'
+title = 'AI Independence'
+theme = 'terminal'
+
+[params]
+  contentTypeName = "posts"
+  themeColor = "blue"
+  showMenuItems = 5
+  fullWidthTheme = false
+  centerTheme = true
+  autoCursor = true
+  
+[params.logo]
+  logoText = "ai-free:~$"
+  logoHomeLink = "/"
+
+[menu]
+  [[menu.main]]
+    identifier = "privacy"
+    name = "privacy/"
+    url = "/categories/privacy/"
+    weight = 10
+  [[menu.main]]
+    identifier = "surveillance"
+    name = "surveillance/"
+    url = "/categories/surveillance/"
+    weight = 20
+  [[menu.main]]
+    identifier = "local-ai"
+    name = "local-ai/"
+    url = "/categories/local-ai/"
+    weight = 30
+  [[menu.main]]
+    identifier = "tools"
+    name = "tools/"
+    url = "/categories/tools/"
+    weight = 40
+  [[menu.main]]
+    identifier = "about"
+    name = "about.txt"
+    url = "/about/"
+    weight = 50
