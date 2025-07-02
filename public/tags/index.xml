@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on AI Independence</title>
+    <link>http://localhost:1317/tags/</link>
+    <description>Recent content in Tags on AI Independence</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Jul 2025 21:47:39 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1317/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ai-Independence</title>
+      <link>http://localhost:1317/tags/ai-independence/</link>
+      <pubDate>Tue, 01 Jul 2025 21:47:39 -0400</pubDate>
+      <guid>http://localhost:1317/tags/ai-independence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Privacy</title>
+      <link>http://localhost:1317/tags/privacy/</link>
+      <pubDate>Tue, 01 Jul 2025 21:47:39 -0400</pubDate>
+      <guid>http://localhost:1317/tags/privacy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Welcome</title>
+      <link>http://localhost:1317/tags/welcome/</link>
+      <pubDate>Tue, 01 Jul 2025 21:47:39 -0400</pubDate>
+      <guid>http://localhost:1317/tags/welcome/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
