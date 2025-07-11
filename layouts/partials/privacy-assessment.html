@@ -1,0 +1,418 @@
+<!-- Interactive Privacy Assessment Terminal Widget -->
+<div id="privacy-assessment" style="background: linear-gradient(135deg, #0a0a0f, #003399, #0066ff); border: 2px solid #0066ff; border-radius: 12px; padding: 25px; margin: 30px 0; font-family: 'Fira Code', 'Courier New', monospace; color: #00ff41; box-shadow: 0 15px 35px rgba(0, 102, 255, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);">
+    <!-- Terminal Header -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid rgba(0, 102, 255, 0.3);">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 12px; height: 12px; background: #ff4444; border-radius: 50%;"></div>
+            <div style="width: 12px; height: 12px; background: #ff8800; border-radius: 50%;"></div>
+            <div style="width: 12px; height: 12px; background: #00ff41; border-radius: 50%;"></div>
+            <span style="margin-left: 15px; color: #0066ff;">privacy-scanner.exe</span>
+        </div>
+        <span style="color: #00aaff; font-size: 12px;">🛡️ Security Assessment</span>
+    </div>
+    
+    <!-- Assessment Header -->
+    <div style="text-align: center; margin-bottom: 25px;">
+        <pre style="color: #00aaff; font-size: 14px; margin: 0 0 15px 0; line-height: 1.4;">
+<span style="color: #0066ff;">ai-free</span><span style="color: #00aaff;">:</span><span style="color: #0066ff;">~</span><span style="color: #00ff41;">$ </span><span style="color: #e0e6ff;">./privacy_scanner --full-audit</span>
+<span style="color: #ff8800;">[SCANNING]</span> <span style="color: #ffffff;">Analyzing your digital exposure...</span>
+<span style="color: #00ff41;">[READY]</span> <span style="color: #ffffff;">Interactive assessment loaded</span>
+        </pre>
+        
+        <h3 style="margin: 0 0 10px 0; color: #00aaff; font-size: 22px; text-shadow: 0 0 10px #0066ff;">🔍 AI Surveillance Risk Assessment</h3>
+        <p style="color: #e0e6ff; margin: 0; font-size: 14px;">Discover your privacy vulnerabilities in 60 seconds</p>
+    </div>
+    
+    <!-- Assessment Questions -->
+    <div id="assessment-questions" style="margin-bottom: 25px;">
+        <!-- Question 1 -->
+        <div class="privacy-question" data-question="1" style="background: rgba(0, 0, 0, 0.4); border: 1px solid #0066ff; border-radius: 8px; padding: 20px; margin-bottom: 15px;">
+            <pre style="margin: 0 0 10px 0; color: #ff8800; font-size: 12px;">
+[QUESTION 1/5] Social Media Surveillance
+            </pre>
+            <p style="color: #e0e6ff; margin: 0 0 15px 0; font-size: 16px; line-height: 1.4;">
+                <strong>How many social media platforms can currently track you?</strong>
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <button class="assessment-option" data-value="5" data-points="high" style="background: rgba(255, 68, 68, 0.1); border: 1px solid #ff4444; color: #ff4444; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    🚨 5+ platforms (Facebook, Instagram, TikTok, etc.)
+                </button>
+                <button class="assessment-option" data-value="3" data-points="medium" style="background: rgba(255, 136, 0, 0.1); border: 1px solid #ff8800; color: #ff8800; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    ⚠️ 3-4 platforms
+                </button>
+                <button class="assessment-option" data-value="1" data-points="low" style="background: rgba(0, 255, 65, 0.1); border: 1px solid #00ff41; color: #00ff41; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    ✅ 1-2 platforms or privacy-focused
+                </button>
+                <button class="assessment-option" data-value="0" data-points="safe" style="background: rgba(0, 170, 255, 0.1); border: 1px solid #00aaff; color: #00aaff; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    🛡️ None or fully anonymous
+                </button>
+            </div>
+        </div>
+        
+        <!-- Question 2 -->
+        <div class="privacy-question" data-question="2" style="background: rgba(0, 0, 0, 0.4); border: 1px solid #0066ff; border-radius: 8px; padding: 20px; margin-bottom: 15px; display: none;">
+            <pre style="margin: 0 0 10px 0; color: #ff8800; font-size: 12px;">
+[QUESTION 2/5] Device & Browser Tracking
+            </pre>
+            <p style="color: #e0e6ff; margin: 0 0 15px 0; font-size: 16px; line-height: 1.4;">
+                <strong>What's your current browser and device privacy setup?</strong>
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <button class="assessment-option" data-value="chrome" data-points="high" style="background: rgba(255, 68, 68, 0.1); border: 1px solid #ff4444; color: #ff4444; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    🚨 Chrome/Edge, default settings
+                </button>
+                <button class="assessment-option" data-value="firefox" data-points="medium" style="background: rgba(255, 136, 0, 0.1); border: 1px solid #ff8800; color: #ff8800; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    ⚠️ Firefox/Safari, some privacy settings
+                </button>
+                <button class="assessment-option" data-value="hardened" data-points="low" style="background: rgba(0, 255, 65, 0.1); border: 1px solid #00ff41; color: #00ff41; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    ✅ Hardened Firefox or Brave
+                </button>
+                <button class="assessment-option" data-value="tor" data-points="safe" style="background: rgba(0, 170, 255, 0.1); border: 1px solid #00aaff; color: #00aaff; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    🛡️ Tor Browser or Tails OS
+                </button>
+            </div>
+        </div>
+        
+        <!-- Question 3 -->
+        <div class="privacy-question" data-question="3" style="background: rgba(0, 0, 0, 0.4); border: 1px solid #0066ff; border-radius: 8px; padding: 20px; margin-bottom: 15px; display: none;">
+            <pre style="margin: 0 0 10px 0; color: #ff8800; font-size: 12px;">
+[QUESTION 3/5] AI & Voice Assistants
+            </pre>
+            <p style="color: #e0e6ff; margin: 0 0 15px 0; font-size: 16px; line-height: 1.4;">
+                <strong>How many AI assistants have access to your voice/data?</strong>
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <button class="assessment-option" data-value="multiple" data-points="high" style="background: rgba(255, 68, 68, 0.1); border: 1px solid #ff4444; color: #ff4444; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    🚨 Alexa, Siri, Google Assistant active
+                </button>
+                <button class="assessment-option" data-value="one" data-points="medium" style="background: rgba(255, 136, 0, 0.1); border: 1px solid #ff8800; color: #ff8800; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    ⚠️ One assistant, limited permissions
+                </button>
+                <button class="assessment-option" data-value="disabled" data-points="low" style="background: rgba(0, 255, 65, 0.1); border: 1px solid #00ff41; color: #00ff41; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    ✅ Disabled or privacy-focused only
+                </button>
+                <button class="assessment-option" data-value="local" data-points="safe" style="background: rgba(0, 170, 255, 0.1); border: 1px solid #00aaff; color: #00aaff; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    🛡️ Local AI only (no cloud)
+                </button>
+            </div>
+        </div>
+        
+        <!-- Question 4 -->
+        <div class="privacy-question" data-question="4" style="background: rgba(0, 0, 0, 0.4); border: 1px solid #0066ff; border-radius: 8px; padding: 20px; margin-bottom: 15px; display: none;">
+            <pre style="margin: 0 0 10px 0; color: #ff8800; font-size: 12px;">
+[QUESTION 4/5] Location & Biometric Tracking
+            </pre>
+            <p style="color: #e0e6ff; margin: 0 0 15px 0; font-size: 16px; line-height: 1.4;">
+                <strong>How exposed is your physical identity and location?</strong>
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <button class="assessment-option" data-value="full" data-points="high" style="background: rgba(255, 68, 68, 0.1); border: 1px solid #ff4444; color: #ff4444; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    🚨 Face ID, location always on
+                </button>
+                <button class="assessment-option" data-value="partial" data-points="medium" style="background: rgba(255, 136, 0, 0.1); border: 1px solid #ff8800; color: #ff8800; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    ⚠️ Limited biometrics, some location
+                </button>
+                <button class="assessment-option" data-value="minimal" data-points="low" style="background: rgba(0, 255, 65, 0.1); border: 1px solid #00ff41; color: #00ff41; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    ✅ Minimal biometrics, location off
+                </button>
+                <button class="assessment-option" data-value="anonymous" data-points="safe" style="background: rgba(0, 170, 255, 0.1); border: 1px solid #00aaff; color: #00aaff; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    🛡️ No biometrics, location spoofed
+                </button>
+            </div>
+        </div>
+        
+        <!-- Question 5 -->
+        <div class="privacy-question" data-question="5" style="background: rgba(0, 0, 0, 0.4); border: 1px solid #0066ff; border-radius: 8px; padding: 20px; margin-bottom: 15px; display: none;">
+            <pre style="margin: 0 0 10px 0; color: #ff8800; font-size: 12px;">
+[QUESTION 5/5] Communication Security
+            </pre>
+            <p style="color: #e0e6ff; margin: 0 0 15px 0; font-size: 16px; line-height: 1.4;">
+                <strong>How secure are your communications from AI surveillance?</strong>
+            </p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <button class="assessment-option" data-value="insecure" data-points="high" style="background: rgba(255, 68, 68, 0.1); border: 1px solid #ff4444; color: #ff4444; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    🚨 WhatsApp, Gmail, standard SMS
+                </button>
+                <button class="assessment-option" data-value="basic" data-points="medium" style="background: rgba(255, 136, 0, 0.1); border: 1px solid #ff8800; color: #ff8800; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    ⚠️ Signal, ProtonMail (some use)
+                </button>
+                <button class="assessment-option" data-value="secure" data-points="low" style="background: rgba(0, 255, 65, 0.1); border: 1px solid #00ff41; color: #00ff41; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    ✅ Signal + Tor, encrypted email
+                </button>
+                <button class="assessment-option" data-value="military" data-points="safe" style="background: rgba(0, 170, 255, 0.1); border: 1px solid #00aaff; color: #00aaff; padding: 12px; border-radius: 6px; cursor: pointer; font-family: inherit; transition: all 0.3s ease;">
+                    🛡️ Self-hosted, military-grade encryption
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Results Section -->
+    <div id="assessment-results" style="display: none;">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <pre style="color: #00ff41; font-size: 12px; margin: 0 0 15px 0;">
+[ANALYSIS COMPLETE] Processing results...
+[VULNERABILITY SCAN] Generating recommendations...
+[REPORT READY] Your privacy assessment is complete.
+            </pre>
+        </div>
+        
+        <div id="risk-level" style="text-align: center; margin-bottom: 25px;">
+            <!-- Risk level will be populated by JavaScript -->
+        </div>
+        
+        <div id="recommendations" style="background: rgba(0, 0, 0, 0.4); border: 1px solid #0066ff; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+            <!-- Recommendations will be populated by JavaScript -->
+        </div>
+        
+        <!-- Call to action based on results -->
+        <div style="text-align: center; background: linear-gradient(135deg, rgba(0, 255, 65, 0.1), rgba(0, 170, 255, 0.1)); border: 1px solid #00aaff; border-radius: 8px; padding: 20px;">
+            <h4 style="margin: 0 0 15px 0; color: #00aaff;">🎯 Get Your Personalized Escape Plan</h4>
+            <p style="color: #e0e6ff; margin: 0 0 20px 0; font-size: 14px;">Based on your assessment, we'll send you a custom privacy roadmap with immediate action steps.</p>
+            
+            <form action="https://your-email-service.com/subscribe" method="POST" style="max-width: 400px; margin: 0 auto;">
+                <input type="hidden" name="list" value="ai-surveillance">
+                <input type="hidden" name="source" value="privacy-assessment">
+                <input type="hidden" name="assessment_score" id="final-score">
+                <input type="hidden" name="risk_level" id="final-risk">
+                
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="secure@your-domain.com" 
+                        required
+                        autocomplete="email"
+                        style="flex: 1; min-width: 250px; padding: 15px; border: 2px solid #0066ff; border-radius: 8px; background: rgba(0, 0, 0, 0.8); color: #00aaff; font-family: 'Fira Code', monospace; font-size: 14px; box-sizing: border-box;"
+                    >
+                    <button 
+                        type="submit"
+                        style="background: linear-gradient(135deg, #00ff41, #00aa33); color: #000000; border: none; padding: 15px 25px; border-radius: 8px; font-weight: bold; cursor: pointer; font-family: 'Fira Code', monospace; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(0, 255, 65, 0.3); transition: all 0.3s ease; min-width: 140px; white-space: nowrap;"
+                    >
+                        📋 GET PLAN
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Progress Bar -->
+    <div style="margin-top: 20px;">
+        <div style="background: rgba(0, 0, 0, 0.6); border-radius: 10px; padding: 8px;">
+            <div id="progress-bar" style="background: linear-gradient(90deg, #0066ff, #00aaff); height: 8px; border-radius: 4px; width: 0%; transition: width 0.5s ease;"></div>
+        </div>
+        <p style="text-align: center; margin: 8px 0 0 0; color: #0066ff; font-size: 12px;">
+            Question <span id="current-question">1</span> of 5 | <span id="progress-text">Privacy Vulnerability Scan</span>
+        </p>
+    </div>
+</div>
+
+<script>
+class PrivacyAssessment {
+    constructor() {
+        this.currentQuestion = 1;
+        this.totalQuestions = 5;
+        this.answers = {};
+        this.score = 0;
+        this.init();
+    }
+    
+    init() {
+        this.setupEventListeners();
+        this.updateProgress();
+    }
+    
+    setupEventListeners() {
+        const options = document.querySelectorAll('.assessment-option');
+        
+        options.forEach(option => {
+            option.addEventListener('click', (e) => {
+                this.selectOption(e.target);
+            });
+            
+            // Hover effects
+            option.addEventListener('mouseenter', (e) => {
+                e.target.style.transform = 'translateY(-2px)';
+                e.target.style.boxShadow = '0 4px 15px rgba(0, 102, 255, 0.3)';
+            });
+            
+            option.addEventListener('mouseleave', (e) => {
+                if (!e.target.classList.contains('selected')) {
+                    e.target.style.transform = 'translateY(0)';
+                    e.target.style.boxShadow = 'none';
+                }
+            });
+        });
+    }
+    
+    selectOption(element) {
+        const question = element.closest('.privacy-question');
+        const questionNum = question.dataset.question;
+        
+        // Remove selection from other options in this question
+        question.querySelectorAll('.assessment-option').forEach(opt => {
+            opt.classList.remove('selected');
+            opt.style.transform = 'translateY(0)';
+            opt.style.boxShadow = 'none';
+            opt.style.opacity = '0.6';
+        });
+        
+        // Mark this option as selected
+        element.classList.add('selected');
+        element.style.transform = 'translateY(-2px)';
+        element.style.boxShadow = '0 6px 20px rgba(0, 255, 65, 0.4)';
+        element.style.opacity = '1';
+        
+        // Store the answer
+        this.answers[questionNum] = {
+            value: element.dataset.value,
+            points: element.dataset.points
+        };
+        
+        // Calculate score
+        this.calculateScore();
+        
+        // Move to next question after a delay
+        setTimeout(() => {
+            this.nextQuestion();
+        }, 800);
+    }
+    
+    calculateScore() {
+        this.score = 0;
+        Object.values(this.answers).forEach(answer => {
+            switch(answer.points) {
+                case 'high': this.score += 4; break;
+                case 'medium': this.score += 3; break;
+                case 'low': this.score += 2; break;
+                case 'safe': this.score += 1; break;
+            }
+        });
+    }
+    
+    nextQuestion() {
+        if (this.currentQuestion < this.totalQuestions) {
+            // Hide current question
+            document.querySelector(`[data-question="${this.currentQuestion}"]`).style.display = 'none';
+            
+            // Show next question
+            this.currentQuestion++;
+            document.querySelector(`[data-question="${this.currentQuestion}"]`).style.display = 'block';
+            
+            this.updateProgress();
+        } else {
+            this.showResults();
+        }
+    }
+    
+    updateProgress() {
+        const progress = (this.currentQuestion / this.totalQuestions) * 100;
+        document.getElementById('progress-bar').style.width = progress + '%';
+        document.getElementById('current-question').textContent = this.currentQuestion;
+        
+        if (this.currentQuestion === this.totalQuestions) {
+            document.getElementById('progress-text').textContent = 'Final Analysis';
+        }
+    }
+    
+    showResults() {
+        // Hide questions
+        document.getElementById('assessment-questions').style.display = 'none';
+        
+        // Show results
+        document.getElementById('assessment-results').style.display = 'block';
+        
+        // Update progress to 100%
+        document.getElementById('progress-bar').style.width = '100%';
+        document.getElementById('progress-text').textContent = 'Assessment Complete';
+        
+        // Generate results based on score
+        this.generateResults();
+    }
+    
+    generateResults() {
+        const riskLevel = document.getElementById('risk-level');
+        const recommendations = document.getElementById('recommendations');
+        
+        let riskColor, riskText, riskDescription, recommendationList;
+        
+        if (this.score >= 16) {
+            riskColor = '#ff4444';
+            riskText = 'CRITICAL RISK';
+            riskDescription = 'You are completely exposed to AI surveillance and manipulation';
+            recommendationList = [
+                'IMMEDIATE: Switch to Brave browser or hardened Firefox',
+                'URGENT: Install Signal messenger and ProtonMail',
+                'CRITICAL: Disable all voice assistants and biometric authentication',
+                'PRIORITY: Use VPN and ad blockers on all devices',
+                'ESSENTIAL: Begin degoogling process immediately'
+            ];
+        } else if (this.score >= 12) {
+            riskColor = '#ff8800';
+            riskText = 'HIGH RISK';
+            riskDescription = 'Significant privacy vulnerabilities detected';
+            recommendationList = [
+                'Install privacy-focused browser extensions',
+                'Review and limit social media permissions',
+                'Set up encrypted communication channels',
+                'Disable unnecessary location tracking',
+                'Consider local AI alternatives'
+            ];
+        } else if (this.score >= 8) {
+            riskColor = '#ffaa00';
+            riskText = 'MODERATE RISK';
+            riskDescription = 'Some privacy measures in place, but gaps remain';
+            recommendationList = [
+                'Strengthen browser privacy settings',
+                'Audit app permissions regularly',
+                'Implement additional encryption layers',
+                'Reduce digital footprint gradually',
+                'Learn advanced privacy techniques'
+            ];
+        } else {
+            riskColor = '#00ff41';
+            riskText = 'LOW RISK';
+            riskDescription = 'Strong privacy foundation detected';
+            recommendationList = [
+                'Maintain current security practices',
+                'Stay updated on new threats',
+                'Consider helping others achieve privacy',
+                'Explore advanced anonymity techniques',
+                'Monitor for emerging surveillance methods'
+            ];
+        }
+        
+        // Update risk level display
+        riskLevel.innerHTML = `
+            <div style="background: rgba(255, 68, 68, 0.15); border: 2px solid ${riskColor}; border-radius: 10px; padding: 20px; display: inline-block;">
+                <div style="font-size: 24px; color: ${riskColor}; font-weight: bold; margin-bottom: 10px;">
+                    ⚠️ ${riskText}
+                </div>
+                <div style="color: #e0e6ff; font-size: 14px;">
+                    Score: ${this.score}/20 | ${riskDescription}
+                </div>
+            </div>
+        `;
+        
+        // Update recommendations
+        recommendations.innerHTML = `
+            <h4 style="margin: 0 0 15px 0; color: #00aaff;">📋 Immediate Action Plan</h4>
+            <div style="text-align: left;">
+                ${recommendationList.map((rec, index) => `
+                    <div style="margin: 10px 0; color: #e0e6ff; font-size: 14px; line-height: 1.4;">
+                        <span style="color: #00ff41; font-weight: bold;">${index + 1}.</span> ${rec}
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        
+        // Store results for form submission
+        document.getElementById('final-score').value = this.score;
+        document.getElementById('final-risk').value = riskText;
+    }
+}
+
+// Initialize assessment when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    new PrivacyAssessment();
+});
+</script>
