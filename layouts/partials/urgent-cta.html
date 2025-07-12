@@ -1,0 +1,72 @@
+<!-- Urgent Action CTA Widget -->
+<div style="background: linear-gradient(135deg, #ff4444, #cc0000); border-radius: 12px; padding: 25px; margin: 30px 0; text-align: center; color: #ffffff; box-shadow: 0 8px 25px rgba(255, 68, 68, 0.4); animation: urgent-pulse 3s infinite;">
+    <div style="margin-bottom: 15px;">
+        <span style="font-size: 24px;">⚠️</span>
+        <h3 style="margin: 10px 0; font-size: 20px; color: #ffffff; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);">
+            SURVEILLANCE ACTIVE: Take Action Now
+        </h3>
+    </div>
+    
+    <p style="color: #ffffff; font-size: 16px; margin: 0 0 20px 0; line-height: 1.5;">
+        While you read this, AI algorithms are building a profile of your interests, behavior, and vulnerabilities. <strong>Every second counts.</strong>
+    </p>
+    
+    <div style="background: rgba(0, 0, 0, 0.3); border-radius: 8px; padding: 15px; margin: 20px 0;">
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; font-size: 14px;">
+            <div>⏱️ <strong>Time on site:</strong> <span id="time-tracker">0:00</span></div>
+            <div>📊 <strong>Data points collected:</strong> <span id="data-counter">0</span></div>
+        </div>
+    </div>
+    
+    <a href="/start-here/" style="background: linear-gradient(135deg, #00ff41, #00aa33); color: #000000; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; display: inline-block; box-shadow: 0 4px 15px rgba(0, 255, 65, 0.4); transition: all 0.3s ease; margin: 10px;">
+        🛡️ PROTECT YOURSELF NOW
+    </a>
+    
+    <div style="font-size: 12px; color: rgba(255, 255, 255, 0.8); margin-top: 15px;">
+        ✓ Instant access ✓ No tracking ✓ Military-grade protection
+    </div>
+</div>
+
+<style>
+@keyframes urgent-pulse {
+    0%, 100% { 
+        transform: scale(1);
+        box-shadow: 0 8px 25px rgba(255, 68, 68, 0.4);
+    }
+    50% { 
+        transform: scale(1.02);
+        box-shadow: 0 12px 35px rgba(255, 68, 68, 0.6);
+    }
+}
+</style>
+
+<script>
+// Time tracker and data counter
+document.addEventListener('DOMContentLoaded', () => {
+    const startTime = Date.now();
+    let dataPoints = 0;
+    
+    const updateCounters = () => {
+        const elapsed = Math.floor((Date.now() - startTime) / 1000);
+        const minutes = Math.floor(elapsed / 60);
+        const seconds = elapsed % 60;
+        
+        const timeTracker = document.getElementById('time-tracker');
+        const dataCounter = document.getElementById('data-counter');
+        
+        if (timeTracker) {
+            timeTracker.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+        }
+        
+        if (dataCounter) {
+            // Simulate data collection (1 point per 2 seconds, accelerating)
+            dataPoints = Math.floor(elapsed / 2) + Math.floor(elapsed / 10) * 3;
+            dataCounter.textContent = dataPoints.toLocaleString();
+        }
+    };
+    
+    // Update every second
+    setInterval(updateCounters, 1000);
+    updateCounters(); // Initial call
+});
+</script>

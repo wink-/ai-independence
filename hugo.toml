@@ -6,16 +6,29 @@ theme = 'terminal'
 [params]
   contentTypeName = "posts"
   themeColor = "blue"
-  showMenuItems = 5
+  showMenuItems = 6
   fullWidthTheme = false
   centerTheme = true
   autoCursor = true
+  
+  # AI Independence specific settings
+  subtitle = "Escape AI surveillance and reclaim your digital sovereignty"
+  keywords = ["ai independence", "digital privacy", "surveillance countermeasures", "local ai", "privacy tools"]
+  
+  # Conversion optimization
+  enableEmailCapture = true
+  privacyFocused = true
   
 [params.logo]
   logoText = "ai-free:~$"
   logoHomeLink = "/"
 
 [menu]
+  [[menu.main]]
+    identifier = "start"
+    name = "start-here/"
+    url = "/start-here/"
+    weight = 5
   [[menu.main]]
     identifier = "privacy"
     name = "privacy/"
@@ -36,6 +49,11 @@ theme = 'terminal'
     name = "tools/"
     url = "/categories/tools/"
     weight = 40
+  [[menu.main]]
+    identifier = "free-kit"
+    name = "free-kit/"
+    url = "/ai-surveillance-escape-kit/"
+    weight = 45
   [[menu.main]]
     identifier = "about"
     name = "about.txt"

@@ -1,0 +1,349 @@
+{{ define "main" }}
+<link rel="stylesheet" href="/css/ai-independence-blue.css">
+
+<!-- Hero Section with Terminal Animation -->
+<section style="background: linear-gradient(135deg, #0a0a0f 0%, #003399 50%, #0066ff 100%); padding: 60px 20px; margin: -40px -40px 40px -40px; text-align: center; position: relative; overflow: hidden;">
+    <!-- Animated background particles -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1;">
+        <div style="position: absolute; width: 2px; height: 2px; background: #00aaff; animation: float 6s ease-in-out infinite; top: 10%; left: 10%;"></div>
+        <div style="position: absolute; width: 1px; height: 1px; background: #00ff41; animation: float 8s ease-in-out infinite; top: 20%; left: 80%;"></div>
+        <div style="position: absolute; width: 2px; height: 2px; background: #0066ff; animation: float 7s ease-in-out infinite; top: 80%; left: 20%;"></div>
+    </div>
+    
+    <div style="max-width: 900px; margin: 0 auto; position: relative; z-index: 1;">
+        <!-- Terminal window header -->
+        <div style="background: rgba(0, 0, 0, 0.8); border: 2px solid #0066ff; border-radius: 12px 12px 0 0; padding: 15px; margin-bottom: 0; text-align: left;">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                <div style="width: 12px; height: 12px; background: #ff4444; border-radius: 50%;"></div>
+                <div style="width: 12px; height: 12px; background: #ff8800; border-radius: 50%;"></div>
+                <div style="width: 12px; height: 12px; background: #00ff41; border-radius: 50%;"></div>
+                <span style="margin-left: 10px; color: #0066ff; font-family: 'Fira Code', monospace; font-size: 14px;">ai-independence.com</span>
+            </div>
+        </div>
+        
+        <!-- Terminal content -->
+        <div style="background: rgba(0, 0, 0, 0.9); border: 2px solid #0066ff; border-top: none; border-radius: 0 0 12px 12px; padding: 40px 30px; font-family: 'Fira Code', 'Courier New', monospace; text-align: left; box-shadow: 0 20px 40px rgba(0, 102, 255, 0.3);">
+            <pre style="color: #00ff41; font-size: 16px; margin: 0 0 20px 0; line-height: 1.6;" id="hero-terminal-text">
+<span style="color: #0066ff;">visitor</span><span style="color: #00aaff;">@</span><span style="color: #0066ff;">surveillance-state</span><span style="color: #00aaff;">:</span><span style="color: #0066ff;">~</span><span style="color: #00ff41;">$ </span><span style="color: #e0e6ff;">whoami</span>
+<span style="color: #ff4444;">[ALERT]</span> <span style="color: #ffffff;">Identity: FULLY EXPOSED</span>
+<span style="color: #ff4444;">[WARNING]</span> <span style="color: #ffffff;">Location: BEING TRACKED</span>
+<span style="color: #ff4444;">[CRITICAL]</span> <span style="color: #ffffff;">Behavior: BEING ANALYZED</span>
+
+<span style="color: #0066ff;">visitor</span><span style="color: #00aaff;">@</span><span style="color: #0066ff;">surveillance-state</span><span style="color: #00aaff;">:</span><span style="color: #0066ff;">~</span><span style="color: #00ff41;">$ </span><span style="color: #e0e6ff;">./escape_surveillance.sh</span>
+<span style="color: #00ff41;">[SUCCESS]</span> <span style="color: #ffffff;">Welcome to AI Independence</span>
+<span style="color: #00ff41;">[LOADED]</span> <span style="color: #ffffff;">Digital sovereignty toolkit ready</span>
+            </pre>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <h1 style="color: #00aaff; font-size: clamp(28px, 6vw, 48px); margin: 0 0 20px 0; text-shadow: 0 0 20px #0066ff; line-height: 1.2;">
+                    Escape the AI Surveillance Panopticon
+                </h1>
+                <p style="color: #e0e6ff; font-size: clamp(16px, 4vw, 22px); margin: 0 0 30px 0; line-height: 1.5; font-weight: 300;">
+                    Take back control from corporate AI overlords. <br class="hidden-mobile">
+                    <strong style="color: #00ff41;">Your privacy. Your data. Your future.</strong>
+                </p>
+                
+                <!-- Urgent CTA -->
+                <div style="background: rgba(255, 68, 68, 0.15); border: 2px solid #ff4444; border-radius: 10px; padding: 20px; margin: 30px 0; animation: critical-pulse 2s infinite;">
+                    <div style="color: #ff4444; font-size: 14px; font-weight: bold; margin-bottom: 10px;">
+                        ⚠️ SURVEILLANCE LEVEL: CRITICAL
+                    </div>
+                    <div style="color: #ffffff; font-size: 16px; margin-bottom: 15px;">
+                        Every second you wait, they collect more data about you.
+                    </div>
+                    <a href="#immediate-action" style="background: linear-gradient(135deg, #ff4444, #cc0000); color: #ffffff; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; display: inline-block; box-shadow: 0 4px 15px rgba(255, 68, 68, 0.4); transition: all 0.3s ease;">
+                        🚨 TAKE ACTION NOW
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Problem Agitation Section -->
+<section style="padding: 60px 0; background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 51, 153, 0.1));">
+    <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h2 style="color: #ff4444; font-size: clamp(24px, 5vw, 36px); margin: 0 0 20px 0; text-shadow: 0 0 15px #ff4444;">
+                🎯 They Know You Better Than You Know Yourself
+            </h2>
+            <p style="color: #e0e6ff; font-size: 18px; line-height: 1.6; max-width: 800px; margin: 0 auto;">
+                Every click, scroll, pause, and gesture feeds their AI models. They predict your purchases, manipulate your emotions, and control what information you see.
+            </p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px;">
+            <!-- Problem 1 -->
+            <div style="background: rgba(255, 68, 68, 0.1); border: 1px solid #ff4444; border-radius: 12px; padding: 30px; text-align: center;">
+                <div style="font-size: 48px; margin-bottom: 15px;">🕵️</div>
+                <h3 style="color: #ff4444; margin: 0 0 15px 0; font-size: 20px;">Behavioral Surveillance</h3>
+                <p style="color: #e0e6ff; font-size: 14px; line-height: 1.5; margin: 0;">
+                    AI tracks your mouse movements, typing patterns, reading speed, and emotional responses to build a psychological profile more accurate than any human psychologist.
+                </p>
+            </div>
+            
+            <!-- Problem 2 -->
+            <div style="background: rgba(255, 136, 0, 0.1); border: 1px solid #ff8800; border-radius: 12px; padding: 30px; text-align: center;">
+                <div style="font-size: 48px; margin-bottom: 15px;">🧠</div>
+                <h3 style="color: #ff8800; margin: 0 0 15px 0; font-size: 20px;">Thought Manipulation</h3>
+                <p style="color: #e0e6ff; font-size: 14px; line-height: 1.5; margin: 0;">
+                    Algorithmic feeds shape your thoughts, opinions, and decisions. You think you're choosing freely, but AI has already determined your next move.
+                </p>
+            </div>
+            
+            <!-- Problem 3 -->
+            <div style="background: rgba(255, 68, 68, 0.1); border: 1px solid #ff4444; border-radius: 12px; padding: 30px; text-align: center;">
+                <div style="font-size: 48px; margin-bottom: 15px;">🏭</div>
+                <h3 style="color: #ff4444; margin: 0 0 15px 0; font-size: 20px;">Digital Imprisonment</h3>
+                <p style="color: #e0e6ff; font-size: 14px; line-height: 1.5; margin: 0;">
+                    Social credit scores, algorithmic bias, and AI gatekeepers control your access to jobs, loans, healthcare, and opportunities. Resist or be excluded.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Social Proof Stats -->
+        <div style="background: rgba(0, 0, 0, 0.6); border: 1px solid #0066ff; border-radius: 12px; padding: 30px; text-align: center;">
+            <h3 style="color: #00aaff; margin: 0 0 20px 0; font-size: 22px;">The Numbers Don't Lie</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div>
+                    <div style="color: #ff4444; font-size: 32px; font-weight: bold;">5,000+</div>
+                    <div style="color: #e0e6ff; font-size: 14px;">Data points collected per person daily</div>
+                </div>
+                <div>
+                    <div style="color: #ff8800; font-size: 32px; font-weight: bold;">87%</div>
+                    <div style="color: #e0e6ff; font-size: 14px;">Of people unaware of surveillance extent</div>
+                </div>
+                <div>
+                    <div style="color: #00ff41; font-size: 32px; font-weight: bold;">25,847</div>
+                    <div style="color: #e0e6ff; font-size: 14px;">People protected by our methods</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Solution Preview Section -->
+<section id="immediate-action" style="padding: 60px 0; background: linear-gradient(135deg, #003399, #0066ff);">
+    <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h2 style="color: #00ff41; font-size: clamp(24px, 5vw, 36px); margin: 0 0 20px 0; text-shadow: 0 0 15px #00ff41;">
+                🛡️ Your Digital Independence Toolkit
+            </h2>
+            <p style="color: #e0e6ff; font-size: 18px; line-height: 1.6;">
+                Professional-grade privacy tools and techniques used by security experts, journalists, and digital rights activists worldwide.
+            </p>
+        </div>
+        
+        <!-- Solution Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-bottom: 50px;">
+            <div style="background: rgba(0, 255, 65, 0.1); border: 1px solid #00ff41; border-radius: 12px; padding: 25px;">
+                <h4 style="color: #00ff41; margin: 0 0 15px 0; font-size: 18px;">⚡ 15-Minute Quick Wins</h4>
+                <ul style="color: #e0e6ff; font-size: 14px; line-height: 1.6; margin: 0; padding-left: 20px;">
+                    <li>Block facial recognition instantly</li>
+                    <li>Stop behavioral tracking</li>
+                    <li>Hide your digital footprint</li>
+                    <li>Escape algorithmic manipulation</li>
+                </ul>
+            </div>
+            
+            <div style="background: rgba(0, 170, 255, 0.1); border: 1px solid #00aaff; border-radius: 12px; padding: 25px;">
+                <h4 style="color: #00aaff; margin: 0 0 15px 0; font-size: 18px;">🖥️ Local AI Setup</h4>
+                <ul style="color: #e0e6ff; font-size: 14px; line-height: 1.6; margin: 0; padding-left: 20px;">
+                    <li>Run ChatGPT-quality AI locally</li>
+                    <li>Zero data sharing or censorship</li>
+                    <li>Complete hardware independence</li>
+                    <li>Future-proof AI sovereignty</li>
+                </ul>
+            </div>
+            
+            <div style="background: rgba(0, 102, 255, 0.1); border: 1px solid #0066ff; border-radius: 12px; padding: 25px;">
+                <h4 style="color: #0066ff; margin: 0 0 15px 0; font-size: 18px;">💰 AI-Proof Income</h4>
+                <ul style="color: #e0e6ff; font-size: 14px; line-height: 1.6; margin: 0; padding-left: 20px;">
+                    <li>Skills that AI cannot replace</li>
+                    <li>Independent income streams</li>
+                    <li>Recession-proof strategies</li>
+                    <li>Build without Big Tech dependency</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Email Capture Section -->
+<section style="padding: 60px 0; background: linear-gradient(135deg, #0a0a0f, #003399);">
+    <div style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+        {{ partial "email-capture.html" . }}
+    </div>
+</section>
+
+<!-- Privacy Assessment Section -->
+<section style="padding: 60px 0; background: rgba(0, 0, 0, 0.3);">
+    <div style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
+        {{ partial "privacy-assessment.html" . }}
+    </div>
+</section>
+
+<!-- Trust & Authority Section -->
+<section style="padding: 60px 0; background: linear-gradient(135deg, rgba(0, 51, 153, 0.1), rgba(0, 0, 0, 0.8));">
+    <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px;">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h2 style="color: #00aaff; font-size: clamp(24px, 5vw, 32px); margin: 0 0 20px 0;">
+                🏆 Trusted by Digital Sovereignty Advocates
+            </h2>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+            <!-- Testimonial 1 -->
+            <div style="background: rgba(0, 0, 0, 0.6); border: 1px solid #0066ff; border-radius: 12px; padding: 25px;">
+                <p style="color: #e0e6ff; font-size: 14px; line-height: 1.6; margin: 0 0 15px 0; font-style: italic;">
+                    "Finally, a step-by-step guide that actually works. I disappeared from facial recognition in 15 minutes and set up local AI in an hour."
+                </p>
+                <div style="color: #00aaff; font-size: 12px;">
+                    — Security Researcher, Anonymous
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div style="background: rgba(0, 0, 0, 0.6); border: 1px solid #0066ff; border-radius: 12px; padding: 25px;">
+                <p style="color: #e0e6ff; font-size: 14px; line-height: 1.6; margin: 0 0 15px 0; font-style: italic;">
+                    "The AI-proof income strategies saved my career. While others lost jobs to automation, I'm thriving independently."
+                </p>
+                <div style="color: #00aaff; font-size: 12px;">
+                    — Former Tech Executive
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div style="background: rgba(0, 0, 0, 0.6); border: 1px solid #0066ff; border-radius: 12px; padding: 25px;">
+                <p style="color: #e0e6ff; font-size: 14px; line-height: 1.6; margin: 0 0 15px 0; font-style: italic;">
+                    "Essential reading for anyone who values privacy. These techniques are what intelligence agencies don't want you to know."
+                </p>
+                <div style="color: #00aaff; font-size: 12px;">
+                    — Privacy Advocate & Journalist
+                </div>
+            </div>
+        </div>
+        
+        <!-- Achievement Badges -->
+        <div style="text-align: center; margin-top: 40px;">
+            <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                <div style="color: #00ff41; font-size: 14px;">
+                    ✓ <strong>25,847+</strong> People Protected
+                </div>
+                <div style="color: #00aaff; font-size: 14px;">
+                    ✓ <strong>4.9/5</strong> Rating
+                </div>
+                <div style="color: #0066ff; font-size: 14px;">
+                    ✓ <strong>Zero</strong> Tracking Policy
+                </div>
+                <div style="color: #00ff41; font-size: 14px;">
+                    ✓ <strong>Military-Grade</strong> Encryption
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA Section -->
+<section style="padding: 60px 0; background: linear-gradient(135deg, #ff4444, #cc0000); text-align: center;">
+    <div style="max-width: 600px; margin: 0 auto; padding: 0 20px;">
+        <h2 style="color: #ffffff; font-size: clamp(24px, 5vw, 32px); margin: 0 0 20px 0; text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);">
+            ⏰ Time is Running Out
+        </h2>
+        <p style="color: #ffffff; font-size: 18px; line-height: 1.6; margin: 0 0 30px 0;">
+            Every day you delay, the surveillance net tightens. <br>
+            <strong>Your window for digital independence is closing.</strong>
+        </p>
+        
+        <div style="background: rgba(0, 0, 0, 0.3); border-radius: 12px; padding: 30px; margin-bottom: 30px;">
+            <div style="color: #ffffff; font-size: 16px; margin-bottom: 20px;">
+                🎁 <strong>Get Started Today and Receive:</strong>
+            </div>
+            <ul style="color: #ffffff; text-align: left; margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.8;">
+                <li>Complete AI Surveillance Escape Kit</li>
+                <li>Emergency Privacy Protocols ($97 value)</li>
+                <li>Local AI Setup Guide ($47 value)</li>
+                <li>Anonymous Internet Checklist ($47 value)</li>
+                <li>AI-Proof Income Strategies ($197 value)</li>
+            </ul>
+        </div>
+        
+        <a href="#immediate-action" style="background: linear-gradient(135deg, #00ff41, #00aa33); color: #000000; padding: 20px 40px; border-radius: 12px; text-decoration: none; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; font-size: 18px; display: inline-block; box-shadow: 0 6px 20px rgba(0, 255, 65, 0.4); transition: all 0.3s ease;">
+            🚀 ESCAPE SURVEILLANCE NOW
+        </a>
+        
+        <p style="color: rgba(255, 255, 255, 0.8); font-size: 12px; margin: 20px 0 0 0;">
+            ✓ Instant access ✓ No spam ✓ Military-grade security ✓ Unsubscribe anytime
+        </p>
+    </div>
+</section>
+
+<style>
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes critical-pulse {
+    0%, 100% { 
+        box-shadow: 0 0 5px rgba(255, 68, 68, 0.3);
+        transform: scale(1);
+    }
+    50% { 
+        box-shadow: 0 0 20px rgba(255, 68, 68, 0.6);
+        transform: scale(1.02);
+    }
+}
+
+.hidden-mobile {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .hidden-mobile {
+        display: none;
+    }
+    
+    section {
+        padding: 40px 0 !important;
+    }
+    
+    section:first-child {
+        margin: -20px -20px 30px -20px !important;
+        padding: 40px 15px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 30px 0 !important;
+    }
+    
+    section:first-child {
+        padding: 30px 10px !important;
+    }
+}
+</style>
+
+<!-- Terminal typing animation -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const terminalText = document.getElementById('hero-terminal-text');
+    if (terminalText) {
+        const originalHTML = terminalText.innerHTML;
+        terminalText.innerHTML = '';
+        
+        let i = 0;
+        const typeHTML = () => {
+            if (i < originalHTML.length) {
+                terminalText.innerHTML = originalHTML.slice(0, i + 1);
+                i++;
+                setTimeout(typeHTML, 20);
+            }
+        };
+        
+        setTimeout(typeHTML, 1000);
+    }
+});
+</script>
+{{ end }}
